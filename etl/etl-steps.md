@@ -1,3 +1,7 @@
+---
+description: Steps description and expansion
+---
+
 # ETL Steps
 
 At the most basic, ETL steps are:
@@ -26,7 +30,9 @@ Depending on the environment, testing can happen through a specialized tool, SQL
 
 #### Load
 
+Uploading to a source will also depend heavily on the endpoint.  Ideally, the L in ETL should stand for both Load and Log, so meta-reporting on database health can happen.
 
+A good log file can help raise a flag when Load operations starts taking longer and longer each time.  Both the time start and the time end should be logged, and ideally this can then be checked against the endpoint created time for further debugging.
 
 #### Further Notes
 
