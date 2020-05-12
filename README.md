@@ -1,5 +1,5 @@
 ---
-description: 'To remember the parts of SQL I use once a year, if that.'
+description: Katt's Resources for SQL stuff
 ---
 
 # SQL Notes
@@ -10,5 +10,7 @@ The rest gets trickier, particularly for creating performant code, making comple
 
 For the simple parts of SQL, using the [W3 School](https://www.w3schools.com/sql/default.asp) resource is a fantastic resource to be able to quickly find a refresher.  This is intended to be a resource for the other, stranger parts of SQL.
 
+I've also included some external links to helpful resources.
 
+Also, Hi Cash App folk!
 
