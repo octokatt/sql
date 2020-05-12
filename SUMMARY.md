@@ -6,7 +6,6 @@
 
 * [Basics to Remember](etl/basics-to-remember.md)
 * [ETL Steps](etl/etl-steps.md)
-* [ETL Hardware](etl/etl-hardware.md)
 * [Security Practices](etl/security-practices.md)
 
 ## Select Tricks
