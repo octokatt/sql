@@ -6,17 +6,18 @@
 
 * [Basics to Remember](etl/basics-to-remember.md)
 * [ETL Steps](etl/etl-steps.md)
+* [Naming Practices](etl/naming-practices.md)
 
 ## Select Tricks
 
 * [Over Partition](select-tricks/over-partition.md)
 * [Parameters\*](select-tricks/parameters.md)
-* [Stored Procedures\*](select-tricks/stored-procedures.md)
 
 ## Performance
 
 * [Initial Explorations](performance/initial-explorations.md)
 * [Please No](performance/please-no.md)
+* [Stored Procedures\*](performance/stored-procedures.md)
 
 ## Resources
 
