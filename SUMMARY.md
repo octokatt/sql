@@ -5,6 +5,9 @@
 ## ETL
 
 * [Basics to Remember](etl/basics-to-remember.md)
+* [ETL Steps](etl/etl-steps.md)
+* [ETL Hardware](etl/etl-hardware.md)
+* [Security Practices](etl/security-practices.md)
 
 ## Select Tricks
 
@@ -13,6 +16,7 @@
 ## Performance
 
 * [Initial Explorations](performance/initial-explorations.md)
+* [Please No](performance/please-no.md)
 
 ## Resources
 
