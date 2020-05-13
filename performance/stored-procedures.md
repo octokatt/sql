@@ -17,3 +17,5 @@ GO;
 EXEC aht_report @dept = 'sales';
 ```
 
+This requires the user to have the right permissions to be able to make a procedure, and too many procedures can start to bog down a database.  Nonetheless, this is a hugely helpful tool for running reports quickly.
+
