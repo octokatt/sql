@@ -22,7 +22,9 @@ WHERE      table1.datetime < (SELECT end_date FROM filters)
 
 The top three lines can then be copy pasted into other queries which are set with the same WHERE clauses.  This requires good naming conventions, but allows an easy way to adjust a query without diving deeper into the code.
 
-Note, this can work differently depending on the dialect of SQL used, so check your documentation.  Nonetheless, this is fairly universal.
+Note, this can work differently depending on the dialect of SQL used, so check your documentation.  As well, this can make queries more susceptible to [injection attacks](https://www.w3schools.com/sql/sql_injection.asp) if outward facing.  
+
+Nonetheless, this is fairly universal and very useful to be able to quickly run a query, then rerun with slightly different parameters.
 
 
 

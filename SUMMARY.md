@@ -22,4 +22,6 @@
 ## Resources
 
 * [W3 School for SQL](https://www.w3schools.com/sql/default.asp)
+* [MySQL Docs List](https://dev.mysql.com/doc/)
+* [PostGRE Docs List](https://www.postgresql.org/docs/)
 
