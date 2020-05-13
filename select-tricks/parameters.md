@@ -4,7 +4,7 @@ description: The way to adjust queries quickly
 
 # Creating Parameters
 
-Creating a table within a query for reference can be a huge timesaver to be able to quickly rerun the same set of parameters, particularly over multiple sets of queries.
+Creating a filters table within a query can be a huge timesaver to quickly adjust  or reuse parameters.
 
 For example:
 
@@ -20,7 +20,7 @@ WHERE      table1.datetime < (SELECT end_date FROM filters)
     AND    table1.cus_id == (SELECT cus_id FROM filters)
 ```
 
-The top three lines can then be copy pasted into other queries which are set with the same WHERE clauses.  This requires good naming conventions, but allows an easy way to adjust a query without diving deeper into the code.
+Not only can this quickly be adjusted to take a new end\_date, but the top three lines can then be copy pasted into other queries with the same WHERE clauses.  This requires some query standardization, but can lend speed for initial investigations of a known dataset.
 
 Note, this can work differently depending on the dialect of SQL used, so check your documentation.  As well, this can make queries more susceptible to [injection attacks](https://www.w3schools.com/sql/sql_injection.asp) if outward facing.  
 
