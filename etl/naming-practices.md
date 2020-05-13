@@ -19,7 +19,7 @@ CREATE TABLE things (
     )
 ```
 
-For small databases, this is fine.  But creating a JOIN later becomes much easier if the primary key has the table name in the name, so the foreign key in an attached table can share the same column name.  If we name the above ID `things_id` instead of just ID, building the next table gets easier.
+Creating a JOIN later is easier if the primary key includes the table name, so the foreign key name can match the primary key name.  If we name the above ID `things_id` instead of just ID, we can keep track of relationships easier.
 
 ```text
 CREATE TABLE stuff (
@@ -33,18 +33,18 @@ CREATE TABLE stuff (
 
 This naming convention helps lock the relationship, particularly if multiple tables in the same category \(e.g. contact data\) will relate to the same foreign key outside of the category \(e.g. agent ID\).  
 
-As well, it becomes easier to see interpret what an INNER or OUTER JOIN will return.  The table `things` is the owner of the `things_id` explicitly.  
-
 ```text
 FROM           things
     LEFT JOIN  stuff ON things.things_id = stuff.things_id
 ```
 
+As well, it becomes easier to see interpret what an INNER or OUTER JOIN will return.  The table `things` is the owner of the `things_id` explicitly.  If two tables share a foreign key and a JOIN is desired, an analyst querying the tables will know the column is a foreign key just from the naming convention.
+
 #### Avoid Long Names
 
 Long, descriptive names seem like a good idea.  Sometimes, description is necessary.  A table name is not a good place for a long description.
 
-This becomes particularly egregious for procedurally created table names.  If a database has the incoming velocity and volume to make procedurally generated names worthwhile, consider using acronyms.  Otherwise, the table name becomes so large even creating an alias can be frought with danger.
+This becomes particularly egregious for procedurally created table names.  If a database has the incoming velocity and volume to make procedurally generated names worthwhile, consider acronyms.  Otherwise, the table name becomes so large even creating an alias can be frought with danger.
 
 The below is a fictional example of a reality that comes with procedurally created table names.  
 
@@ -68,5 +68,9 @@ The original layers make sense:
 
 Nonetheless, the execution means this becomes difficult to untangle, and easy to mistype, leading to increased debugging time and general frustration.
 
+#### Build a Dictionary
 
+No matter how clear the naming convention, eventually incoming data velocity, business rule changes, and sheer entropy will cause failure.  An explicit data dictionary, complete with test data and business rule definitions, will help new data professionals get up to speed and help with future debugging.
+
+Creating a back up of the data dictionary in the same place as the database backups is a great practice, particularly so the data dictionary can overlap with the back-up documentation.
 
