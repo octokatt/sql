@@ -11,7 +11,7 @@
 ## Select Tricks
 
 * [Over Partition](select-tricks/over-partition.md)
-* [Parameters\*](select-tricks/parameters.md)
+* [Creating Parameters](select-tricks/parameters.md)
 
 ## Performance
 
