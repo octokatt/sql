@@ -17,7 +17,7 @@
 
 * [Initial Explorations](performance/initial-explorations.md)
 * [Please No](performance/please-no.md)
-* [Stored Procedures\*](performance/stored-procedures.md)
+* [Stored Procedures](performance/stored-procedures.md)
 
 ## Resources
 

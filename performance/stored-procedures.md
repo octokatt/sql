@@ -2,5 +2,5 @@
 description: Making known processes faster
 ---
 
-# Stored Procedures\*
+# Stored Procedures
 
