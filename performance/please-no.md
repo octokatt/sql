@@ -8,13 +8,15 @@ A lot of performant SQL writing is avoiding issues if at all posssible.  Here ar
 
 #### Excessive JOINs
 
-While potentially necessary for some complex queries, generally reducing the number of JOINs in a given process is very necessary.
+While potentially necessary for complex queries, reducing the number of JOINs in a process is helpful.  Potentially, pulling down two datasets then merging them in the data analysis environment will take less time. 
 
-If multiple JOINs become necessary for common tasks, creating a custom VIEW can yield great performance boosts, and the same goes for creating stored procedures.
+If multiple JOINs become necessary for common tasks, creating a custom VIEW in the database can yield great performance boosts.
 
 #### Lack of Testing
 
-Nearly any system will have an ability to see how long a function takes to complete.  If a function is going to be run on a significant basis, running testing on different ways to solve the same problem can shave down the runtime.
+Nearly any system will have an ability to see how long a function takes to complete.  If a function is going to be run on a significant basis, testing different ways to achieve the same results is a good use of time.
+
+Some data products even have profilers which will optimize queries or ETL steps.  Searching for and using these tools can save analyst time and processing time.  Databricks/Spark in particular has a rich toolset to measure and minimize processing time.
 
 #### Using Large Batches
 
@@ -39,8 +41,4 @@ SELECT * FROM (
     )
 WHERE col3 IS NOT NULL
 ```
-
-#### Ignoring Profilers
-
-We live in a wonderful time where usually either the database endpoint or the SQL querying program may have a profiler which can optimize your query or ETL.  Whenever possible, use these programs.
 
