@@ -4,13 +4,11 @@ description: Katt's Resources for SQL stuff
 
 # SQL Notes
 
-Most of SQL is easy.  The vast majority is SELECT statements, and deploying saved code from backups.
+Hi Cash App folk!
 
-The rest gets trickier, particularly for creating performant code, making complex SELECT statements, and making decisions on naming conventions and schema design.  
+Because NDAs mean I cannot share code I've previously written, I've made a guidebook of best practices and code snippets I've found useful over my career, and made it available.
 
-For the simple parts of SQL, using the [W3 School](https://www.w3schools.com/sql/default.asp) resource is a fantastic resource to be able to quickly find a refresher.  This is intended to be a resource for the other, stranger parts of SQL.
+I hope this will be a useful demonstration of my knowledge; at the very least, it's been a great exercise for me to organize some of my thoughts.
 
-I've also included some external links to helpful resources.
-
-Also, Hi Cash App folk!
+Cheers!
 
