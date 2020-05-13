@@ -1,12 +1,12 @@
 ---
-description: Returning sub-tables and richer context
+description: Returning richer context
 ---
 
 # Over Partition
 
-For new analysts just starting to move from Excel to SQL, one of the biggest tools to be able to keep is being able to pivot data in a useful way.
+OVER PARTITION is an amazing way to generate summary data within the greater context of a table without needed an additional step to process the SQL query output.  
 
-For example, say you're a new analyst making a report to show what the average call handle time is for each agent, as well as the overall average for the agent's department.  While this can be handled in Excel or Google Sheets, a straight SQL query can do the same.
+For example, a manager wants a report of their call center agents with both their average handle time \(AHT\) and their department's overall AHT.
 
 Given a table which looks like this...
 
@@ -30,5 +30,17 @@ AVERAGE(t.call_time) OVER (
 FROM table1 t
 ```
 
-This can also cut down on the number of ETL steps needed if the endpoint is not capable of making calculations and should ideally be spoonfed data.
+This can also be used to create running totals and averages by limiting the partition using the table row.  An example would be to show the running total of an account balance over a number of different accounts. 
+
+```text
+SUM(acc.amount) OVER (
+    PARTITION BY    acc.account_id
+    ORDER BY        acc.datetime DESC
+                    ,acc.account_id DESC
+    ROWS BETWEEN    UNBOUNDED PRECEDIING --from the start
+         AND        1 PRECEDING          --to this row
+ )
+```
+
+These can get complex, and should be tested, but can yield a great report, especially when saved as a [stored procedure](../performance/stored-procedures.md).
 
