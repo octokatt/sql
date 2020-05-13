@@ -42,3 +42,7 @@ SELECT * FROM (
 WHERE col3 IS NOT NULL
 ```
 
+#### DISTINCT
+
+Distinct is helpful, but also can massively slow down a query.  Try not to use this when possible.
+
