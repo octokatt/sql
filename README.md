@@ -4,11 +4,7 @@ description: Katt's Resources for SQL stuff
 
 # SQL Notes
 
-Hi Cash App folk!
+This directory is now in [octokatt/wiki/sql](https://github.com/octokatt/wiki/tree/master/sql), so there's just one project of markdowns instead of several.
 
-Because NDAs mean I cannot share code I've previously written, I've made a guidebook of best practices and code snippets I've found useful over my career.  I've written this for a layperson, but with links to help reach the next stages of SQL knowledge.
-
-I hope this will be a useful demonstration of my knowledge; at the very least, it's been a great exercise for me to organize some of my thoughts.
-
-Cheers!
+Formerly, this whole thing was directly linked to GitBooks, and was used to demonstrate knowledge of SQL for my excellent job at Cash App.
 
